@@ -44,6 +44,11 @@ class App {
         this.$modalCloseButton.addEventListener('click', event => {
             this.closeModal(event)
         })
+
+        this.$formCloseButton.addEventListener('click', event => {
+            event.stopPropagation()
+            this.closeForm()
+        })
     }
 
     handleFormClick(event) {
